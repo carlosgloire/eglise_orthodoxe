@@ -6,87 +6,92 @@
 }
 
 body {
-    font-family: "Outfit", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     position: relative;
-    font-size: 1.2rem;
-    font-weight: 100;
+    font-size: 1rem;
+    font-weight: 200;
     color: #333;
     line-height: 1.6;
     background-color: #f5f5f5;
 }
+
 /*---------------------------------------/
-#Titles
+/#Titles
 /---------------------------------------*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 ,button{
+h1{
     font-family: "Dancing Script", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
- a{
-    text-decoration: none;
- }
+button, input , textarea{
+    font-family: "Montserrat", sans-serif;
+}
 
+a{
+    text-decoration: none;
+}
 
 /*-----------------------------------/
-#Header 
+/#Header
 /-----------------------------------*/
 
 .header{
     position: fixed;
     z-index: 2000;
     width: 100%;
+    top: 0;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Initially transparent */
 }
 
 header {
     color: #ffffff;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-hr{
-    border: none;
-    height: 1px;
-    background-color: #ffffffa8;
-}
+
 nav{
     width:100%;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
+
 .nav-links .donate{
     align-items: center;
     border: 1px solid white;
     padding: 10px 20px;
 }
+
 .nav-links .donate:hover{
     background-color: white;
 }
+
 .nav-links .donate i{
     margin-right: 10px;
 }
+
 .nav-links a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 300;
 }
+
 .nav-links a:hover {
     color: #a54e4c;
     transition: 0.4s ease-in-out;
     font-weight: 400;
 }
-
 
 .menu-bar{
     display: flex;
@@ -94,8 +99,8 @@ nav{
     align-items: center;
     padding: 10px 30px;
     margin-top: 20px;
-    
 }
+
 .logo img{
     filter: invert(1) brightness(5);
     height: 45px;
@@ -103,19 +108,17 @@ nav{
     mix-blend-mode: multiply;
     object-fit: cover;
     margin-top: -20px;
-
 }
-
 
 .our-menu {
     display: flex;
     flex-direction: row;
     margin-top: 13px;
 }
+
 .our-menu i {
     color:  #fff;
     font-size: 25px;
-
 }
 
 .menu-icon {
@@ -126,18 +129,19 @@ nav{
     display: none;
 }
 
-
 .indicator i {
     font-size: 1rem;
     color: #fff;
     font-weight: 400;
 }
+
 .search-icon {
     cursor: pointer;
     margin-left: 5px;
     color: #333;
 }
 
+/* Moving Text Styling */
 .moving-text {
     display: flex;
     align-items: center; 
@@ -146,22 +150,26 @@ nav{
     padding: 10px 0px;
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: display 0.3s ease-out;
 }
+
 .moving-text .text{
     display: flex;
     align-items: center;
     margin: 0px 30px;
     font-size: 16px;
 }
+
 .moving-text .text p i{
     margin-left: 10px;
     font-size: 0.9rem;
 }
+
 .text:nth-child(2) {
     animation-delay: 5s; 
 }
 
-/*Organisation sub menu*/
+/* Organisation sub menu */
 .nav-links li {
     position: relative;
     list-style: none;
@@ -217,8 +225,30 @@ nav{
 .dropdown a:hover {
     background-color: #91484727;
     color: #914847;
+}
+
+/* When scrolling, apply background color and text color to header */
+.scrolled header {
+    background-color: white; /* Header background turns white */
+    color: black; /* Header text turns black */
+    padding: 10px 0px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
+.scrolled .logo img{
+    filter: invert(1) brightness(0);
+}
+/* Hide moving-text when scrolling */
+.scrolled .moving-text {
+    display: none;
+}
+.scrolled .nav-links a{
+    color: #4c3636;
+    font-weight: 500;
+}
+/* Initially hide moving text */
+
+
 
 /*---------------------------------------/
 #Home page
@@ -248,12 +278,14 @@ nav{
 .home-text h1 {
     margin-top: 80px;
     margin-bottom: 30px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     
 }
-
+.home-text p{
+    font-size: 14px;
+}
 .home-text a {
     display: flex;
     margin: auto;
@@ -264,7 +296,7 @@ nav{
     transition: 0.4s ease-in-out;
     background-color: #fff;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     color: #914847;
     font-size: 16px;
     margin-top: 50px;
@@ -298,7 +330,7 @@ nav{
     height: 100%;
     z-index: 2;
     pointer-events: none;
-    background: #020202c2;
+    background: #020202d8;
 }
 
 /* Individual images */
@@ -344,4 +376,104 @@ nav{
     background-color: #fff;
     transform: scale(1.3);
     border: 1px solid #fff;
+}
+
+/*---------------------------------------/
+#FOOTER
+/---------------------------------------*/
+
+/* General Footer Styling */
+.footer {
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+.footer i{
+    color: #4c3636;
+
+}
+.footer h2{
+    font-weight: 400;
+}
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 30px;
+}
+
+/* Footer Sections */
+.footer-section {
+    
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
+
+/* Contact Form */
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.footer-input,
+.footer-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.footer-textarea {
+    height: 80px;
+}
+
+.footer-button {
+    background-color: #4c3636;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-link {
+    margin-right: 10px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #4c3636;
+}
+
+/* Footer Copy */
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7a7a7a;
+    border-top: 1px solid #9b9b9b8a;
 }
