@@ -88,9 +88,8 @@ nav{
 }
 
 .nav-links a:hover {
-    color: #a54e4c;
     transition: 0.4s ease-in-out;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .menu-bar{
@@ -190,7 +189,7 @@ nav{
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0;
-    z-index: 1000;
+    z-index: 100;
     min-width: 300px;
     height: 0;
     overflow: hidden;
@@ -223,13 +222,13 @@ nav{
 }
 
 .dropdown a:hover {
-    background-color: #91484727;
+    background-color: #91484710;
     color: #914847;
 }
 
 /* When scrolling, apply background color and text color to header */
 .scrolled header {
-    background-color: white; /* Header background turns white */
+    background-color: #f5f5f5; /* Header background turns white */
     color: black; /* Header text turns black */
     padding: 10px 0px ;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -243,8 +242,15 @@ nav{
     display: none;
 }
 .scrolled .nav-links a{
-    color: #4c3636;
     font-weight: 500;
+    color:#4c3636;
+}
+.scrolled .nav-links .donate{
+    border: 1px solid #914847;;
+}
+.scrolled .nav-links .donate:hover{
+    color: white;
+    background-color: #914847;
 }
 /* Initially hide moving text */
 
@@ -391,8 +397,9 @@ nav{
     color: #4c3636;
 
 }
-.footer h4{
+.footer h3{
     font-weight: 400;
+    color: #914847;
 }
 .footer-container {
     margin: 0 auto;
@@ -410,13 +417,12 @@ nav{
 }
 
 .footer-title {
-    font-size: 24px;
     color: #000;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .footer-text {
+    font-weight: 200;
     margin: 5px 0;
 }
 
@@ -453,12 +459,12 @@ nav{
 /* Social Links */
 .footer-social {
     display: flex;
-    justify-content: center;
+    justify-content:start;
     margin: 10px 0;
 }
 
 .social-link {
-    margin-right: 10px;
+    margin-right: 20px;
     color: black;
     font-size: 18px;
     text-decoration: none;
