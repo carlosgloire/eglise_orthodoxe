@@ -336,14 +336,14 @@ nav{
     height: 100%;
     z-index: 2;
     pointer-events: none;
-    background: #020202d8;
+    background: #020202cb;
 }
 
 /* Individual images */
 .home-images .home-bg {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit:fill;
     position: absolute;
     z-index: 1;
     opacity: 0;
