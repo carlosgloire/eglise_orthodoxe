@@ -386,15 +386,16 @@ nav{
 .paroisse {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
     text-align: center;
 }
-
+.paroisse .name{
+    font-weight: 500;
+}
 .paroisse img {
     width: 100%;
-    border-radius: 8px;
     margin-bottom: 15px;
 }
 
