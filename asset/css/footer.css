@@ -1,0 +1,101 @@
+/*---------------------------------------/
+#FOOTER
+/---------------------------------------*/
+
+/* General Footer Styling */
+.footer {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+.footer i{
+    color: #4c3636;
+
+}
+.footer h3{
+    font-weight: 400;
+    color: #914847;
+}
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 30px;
+}
+
+/* Footer Sections */
+.footer-section {
+    
+    text-align: left;
+}
+
+.footer-title {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
+
+/* Contact Form */
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.footer-input,
+.footer-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.footer-textarea {
+    height: 80px;
+}
+
+.footer-button {
+    background-color: #4c3636;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    justify-content:start;
+    margin: 10px 0;
+}
+.footer-section p i {
+    margin-right: 10px;
+}
+.social-link {
+    margin-right: 20px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #4c3636;
+}
+
+/* Footer Copy */
+.footer-copy {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #7a7a7a;
+    border-top: 1px solid #9b9b9b8a;
+}
