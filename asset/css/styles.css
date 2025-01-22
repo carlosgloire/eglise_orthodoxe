@@ -249,6 +249,9 @@ nav{
     color: white;
     background-color: #914847;
 }
+.scrolled .menu-bar{
+    margin-top: 20px;
+}
 /* Initially hide moving text */
 
 
