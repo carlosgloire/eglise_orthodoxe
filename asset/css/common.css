@@ -492,7 +492,6 @@ nav{
         cursor: pointer;
     }
 }
-
 @media screen and (max-width: 676px) {
     .paroisses-list .paroisse{
         width: 100%;
@@ -504,7 +503,7 @@ nav{
         height: 60vh;
     }
     .paroisse img{
-        height: 320px;
+        height: 350px;
     }
 }
 
