@@ -309,29 +309,29 @@ nav{
 }
 
 /*---------------------------------------/
-#Les patriarcats 
+#Les patriaches 
 /---------------------------------------*/
 
-.patriarcats {
+.patriaches {
     padding: 20px;
     text-align: center;
     background-color: #fff;
 }
 
 
-.patriarcats .section-description {
+.patriaches .section-description {
   
     margin-bottom: 30px;
 }
 
-.patriarcats-list {
+.patriaches-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.patriarcats-item {
+.patriaches-item {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.1);
@@ -346,7 +346,7 @@ nav{
     margin-bottom: 10px;
 }
 
-.patriarcats-item p {
+.patriaches-item p {
     font-size: 1rem;
     color: #7f8c8d;
 }
@@ -400,6 +400,8 @@ nav{
 .paroisse img {
     width: 100%;
     margin-bottom: 15px;
+    height:250px;
+    object-fit: fill;
 }
 
 
