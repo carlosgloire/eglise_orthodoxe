@@ -107,11 +107,14 @@ nav{
     margin-top: 20px;
 }
 
-.logo img{
+.logo img ,.menu-logo img{
     height: 65px;
     width: auto;
     mix-blend-mode: multiply;
     object-fit: cover;
+}
+.menu-logo{
+    display: none;
 }
 
 .our-menu {
@@ -222,7 +225,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -298,7 +301,7 @@ nav{
 /* Individual images */
 .home-images .home-bg {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     object-fit: cover;
     position: absolute;
     z-index: 1;
@@ -410,4 +413,87 @@ nav{
     color: #2e4053;
 }
 
+
+
+/*---------------------------------------/
+#Responsive Design
+/---------------------------------------*/
+
+@media screen and (max-width: 900px) {
+    header .nav-links {
+        position: fixed;
+        top: 100px;
+        left: -100%; 
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        -webkit-column-gap: 15px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        height: 45vh;
+        background-color: #fafafa;
+        box-shadow: 0px 1px 10px #c2c2c25d;
+        transition: left 0.3s ease-in-out;
+    }
+
+    header .nav-links.active {
+        left: 0;
+    }
+    header .nav-links a {
+        color: #141b1fda;
+        padding-top: 20px;
+    }
+    .menu-logo{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .our-menu i{
+        color: #4c3636;
+    }
+    /* Ensure the menu icon is visible */
+
+    .our-menu{
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+    }
+    .our-menu .menu-icon {
+        display: flex; /* Make it visible */
+        cursor: pointer;
+    }
+
+    .our-menu .exit-icon {
+        display: none; /* Initially hidden */
+    }
+    .nav-links a{
+        font-weight: 500;
+        color:#4c3636;
+    }
+    .nav-links .donate{
+        border: 1px solid #914847;;
+    }
+    .nav-links .donate:hover{
+        color: white;
+        background-color: #914847;
+    }
+    /* When active, show the exit icon and hide the menu icon */
+    .our-menu.active .menu-icon {
+        display: none;
+    }
+
+    .our-menu.active .exit-icon {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .paroisses-list .paroisse{
+        width: 100%;
+    }
+}
 
