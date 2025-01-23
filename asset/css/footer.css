@@ -28,7 +28,9 @@
     width: 350px;
     text-align: left;
 }
-
+.footer-section p{
+    text-align: justify;
+}
 .footer-title {
     color: #000;
     margin-bottom: 10px;
