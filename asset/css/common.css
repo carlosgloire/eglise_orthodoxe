@@ -120,7 +120,6 @@ nav{
 .our-menu {
     display: flex;
     flex-direction: row;
-    margin-top: 13px;
 }
 
 .our-menu i {
