@@ -503,5 +503,8 @@ nav{
     .home-images .home-bg{
         height: 60vh;
     }
+    .paroisse img{
+        height: 300px;
+    }
 }
 
