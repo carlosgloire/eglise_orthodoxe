@@ -4,7 +4,7 @@
 
 /* General Footer Styling */
 .footer {
-    padding: 20px 0px 20px 0px;
+    padding: 20px;
     text-align: center;
 }
 .footer i{
@@ -21,12 +21,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 0px 30px;
 }
 
 /* Footer Sections */
 .footer-section {
-    
+    width: 350px;
     text-align: left;
 }
 
@@ -99,4 +98,20 @@
     font-size: 14px;
     color: #7a7a7a;
     border-top: 1px solid #9b9b9b8a;
+}
+
+@media screen and (max-width: 600px){
+
+    .footer-section{
+        width: 100%;
+    }
+    .footer-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 351px){
+    .footer-section .email{
+        word-break: break-word;
+    }
 }

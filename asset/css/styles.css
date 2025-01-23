@@ -101,17 +101,18 @@ nav{
     padding: 10px 30px;
 }
 
-.logo img{
+.logo img ,.menu-logo img{
     height: 65px;
     width: auto;
     mix-blend-mode: multiply;
     object-fit: cover;
 }
-
+.menu-logo{
+    display: none;
+}
 .our-menu {
     display: flex;
     flex-direction: row;
-    margin-top: 13px;
 }
 
 .our-menu i {
@@ -127,17 +128,7 @@ nav{
     display: none;
 }
 
-.indicator i {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 400;
-}
 
-.search-icon {
-    cursor: pointer;
-    margin-left: 5px;
-    color: #333;
-}
 
 /* Moving Text Styling */
 .moving-text {
@@ -187,7 +178,7 @@ nav{
     left: 0;
     background-color: #f5f5f5;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    padding: 0;
+    padding: 10px 0px;
     z-index: 100;
     min-width: 300px;
     height: 0;
@@ -205,7 +196,7 @@ nav{
 
 .dropdown a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 30px;
     text-decoration: none;
     color: black;
     opacity: 0;
@@ -385,3 +376,153 @@ nav{
     border: 1px solid #fff;
 }
 
+/*---------------------------------------/
+#Responsive Design
+/---------------------------------------*/
+
+@media screen and (max-width: 900px) {
+    header .nav-links {
+        position: fixed;
+        top: 110px;
+        left: -100%; 
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        -webkit-column-gap: 15px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        height: 60vh;
+        background-color: #fafafa;
+        box-shadow: 0px 1px 10px #c2c2c25d;
+        transition: left 0.3s ease-in-out;
+    }
+    .scrolled header .nav-links{
+        top: 100px;
+    }
+    header .nav-links.active {
+        left: 0;
+    }
+    header .nav-links a {
+        color: #141b1fda;
+        padding-top: 20px;
+    }
+    .menu-logo{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .scrolled .our-menu i{
+        color: #4c3636;
+    }
+    /* Ensure the menu icon is visible */
+    .our-menu{
+        background-color: #4c3636;
+        padding: 4px;
+        border-radius: 50%;
+    }
+    .scrolled .our-menu{
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+    }
+    .our-menu .menu-icon {
+        display: flex; /* Make it visible */
+        cursor: pointer;
+    }
+
+    .our-menu .exit-icon {
+        display: none; /* Initially hidden */
+    }
+    .nav-links a{
+        font-weight: 500;
+        color:#4c3636;
+    }
+    .nav-links .donate{
+        border: 1px solid #914847;;
+    }
+    .nav-links .donate:hover{
+        color: white;
+        background-color: #914847;
+    }
+    /* When active, show the exit icon and hide the menu icon */
+    .our-menu.active .menu-icon {
+        display: none;
+    }
+
+    .our-menu.active .exit-icon {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .home-images .home-bg{
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 680px){
+    .home-section{
+        height: 110vh;
+    }
+    .home-images .home-bg{
+        height: 110vh;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .home-section{
+        height: 120vh;
+    }
+    .home-images .home-bg{
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 536px){
+    header .nav-links{
+        top:135px;
+    }
+    .moving-text {
+        display: grid;
+        justify-content: center;
+    }
+    .moving-text .text .follow_us{
+        margin-left: 60px;
+    }
+
+}
+
+@media screen and (max-width: 417px){
+    .home-section{
+        height: 130vh;
+    }
+    .home-images .home-bg{
+        height: 130vh;
+    }
+
+    .home-text a {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 365px){
+    .home-section{
+        height: 140vh;
+    }
+    .home-images .home-bg{
+        height: 140vh;
+    }
+}
+@media screen and (max-width: 340px){
+    .home-section{
+        height: 145vh;
+    }
+    .home-images .home-bg{
+        height: 145vh;
+    }
+}

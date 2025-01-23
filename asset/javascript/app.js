@@ -35,3 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlide(currentIndex);
     setInterval(autoSlide, 8000); // Change slide every 10 seconds
 });
+
+//Codes to handle the menu bar 
+const menuIcon = document.querySelector('.menu-icon');
+const exitIcon = document.querySelector('.exit-icon');
+const navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    document.querySelector('.our-menu').classList.add('active');
+});
+
+exitIcon.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    document.querySelector('.our-menu').classList.remove('active');
+});
