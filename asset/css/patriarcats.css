@@ -495,5 +495,11 @@ nav{
     .paroisses-list .paroisse{
         width: 100%;
     }
+    .home-section{
+        height: 60vh;
+    }
+    .home-images .home-bg{
+        height: 60vh;
+    }
 }
 
