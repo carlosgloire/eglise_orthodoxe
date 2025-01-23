@@ -398,6 +398,7 @@ nav{
         box-shadow: 0px 1px 10px #c2c2c25d;
         transition: left 0.3s ease-in-out;
     }
+  
     .scrolled header .nav-links{
         top: 100px;
     }
@@ -420,12 +421,12 @@ nav{
     /* Ensure the menu icon is visible */
     .our-menu{
         background-color: #4c3636;
-        padding: 4px;
+        padding: 7px;
         border-radius: 50%;
     }
     .scrolled .our-menu{
         background-color: white;
-        padding: 4px;
+        padding: 7px;
         border-radius: 50%;
     }
     .our-menu .menu-icon {
