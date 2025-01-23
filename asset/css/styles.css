@@ -527,3 +527,15 @@ nav{
         height: 145vh;
     }
 }
+@media screen and (max-width: 324px){
+
+    .moving-text .text .follow_us{
+        margin-left: 0px;
+    }
+    .home-section{
+        height: 155vh;
+    }
+    .home-images .home-bg{
+        height: 155vh;
+    }
+}
