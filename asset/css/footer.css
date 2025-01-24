@@ -117,12 +117,10 @@
         padding: 30px 30px 10px 30px;
     }
     .footer-copy {
-        margin-top: 20px;
-        padding-top: 10px;
         font-size: 14px;
         color: #7a7a7a;
         border-top: 1px solid #9b9b9b8a;
-        padding: 0px 30px 20px 30px;
+        padding: 10px 30px 20px 30px;
     
     }
 }
