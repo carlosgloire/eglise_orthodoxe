@@ -360,7 +360,7 @@ nav{
     text-align: center;
     background-color: #fff;
     padding-bottom: 30px;
-    padding: 0px 30px ;
+    padding: 20px 30px ;
 }
 
 .paroisses .section-title {
@@ -511,9 +511,7 @@ nav{
         object-fit: fill;
         height: auto;
     }
-    .paroisses{
-        padding-bottom: 20px;
-    }
+
 }
 
 
