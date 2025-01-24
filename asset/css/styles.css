@@ -98,7 +98,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 80px;
 }
 
 .logo img ,.menu-logo img{
@@ -133,22 +133,25 @@ nav{
 /* Moving Text Styling */
 .moving-text {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    flex-wrap: wrap; 
     width: 100%;
     justify-content: space-between;
-    padding: 10px 0px;
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: display 0.3s ease-out;
+    padding: 10px 80px;
+    gap: 30px;
 }
 
 .moving-text .text{
-    display: flex;
-    align-items: center;
-    margin: 0px 30px;
+    
     font-size: 16px;
 }
-
+.moving-text .text .follow_us{
+    display: flex;
+    border:1px solid red;
+}
 .moving-text .text p i{
     margin-left: 10px;
     font-size: 0.9rem;
@@ -222,7 +225,9 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     color: black; /* Header text turns black */
-    margin-top: -15px;
+    margin-top: -18px;
+    margin-left: 2px;
+    margin-right: 2px;
     box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -264,7 +269,7 @@ nav{
 
 .home-text {
     z-index: 10;
-    width: 90%;
+    padding: 0px 80px;
     color: #fff;
     text-align: center;
     
@@ -380,7 +385,7 @@ nav{
 #Responsive Design
 /---------------------------------------*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     header .nav-links {
         position: fixed;
         top: 110px;
@@ -465,53 +470,47 @@ nav{
     }
 }
 @media screen and (max-width: 680px){
-    .home-section{
-        height: 110vh;
+    .home-text{
+        padding: 20px 30px;
     }
-    .home-images .home-bg{
-        height: 110vh;
+    .home-text .welcome-message{
+        text-align: justify;
     }
     .home-text h1{
         font-size: 2rem;
     }
+    .moving-text{
+        padding: 10px 30px;
+    }
+    .menu-bar{
+        padding: 10px 30px;
+    }
 }
 
-@media screen and (max-width: 570px){
-    .home-section{
-        height: 120vh;
-    }
-    .home-images .home-bg{
-        height: 120vh;
-    }
-}
+
 
 @media screen and (max-width: 536px){
     header .nav-links{
         top:135px;
     }
-    .moving-text {
-        display: grid;
+}
+@media screen and (max-width: 520px){
+    header .nav-links{
+        top:135px;
+    }
+    .moving-text{
+        gap: 0px;
         justify-content: center;
     }
-    .moving-text .text .follow_us{
-        margin-left: 60px;
-    }
-
-}
-
-@media screen and (max-width: 417px){
     .home-section{
-        height: 130vh;
+        height: 120vh;
     }
     .home-images .home-bg{
-        height: 130vh;
-    }
-
-    .home-text a {
-        margin-top: 25px;
+        height: 120vh;
     }
 }
-@media screen and (max-width: 365px){
+@media screen and (max-width: 390px){
+
     .home-section{
         height: 140vh;
     }
@@ -520,22 +519,11 @@ nav{
     }
 }
 @media screen and (max-width: 340px){
-    .home-section{
-        height: 145vh;
-    }
-    .home-images .home-bg{
-        height: 145vh;
-    }
-}
-@media screen and (max-width: 324px){
 
-    .moving-text .text .follow_us{
-        margin-left: 0px;
-    }
     .home-section{
-        height: 155vh;
+        height: 150vh;
     }
     .home-images .home-bg{
-        height: 155vh;
+        height: 150vh;
     }
 }
