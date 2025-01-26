@@ -43,7 +43,6 @@ a{
     z-index: 2000;
     width: 100%;
     top: 0;
-    
 }
 
 header {
@@ -56,10 +55,9 @@ header {
     margin-left: 2px;
     margin-right: 2px;
     transition: background-color 0.3s ease;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.897)), url("../asset/images/header_image.jpg");
+    background-image:linear-gradient(rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.897)), url("../images/header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 nav{
