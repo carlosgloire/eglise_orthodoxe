@@ -621,7 +621,9 @@ nav{
     .blog-section {
         padding: 30px 30px;
       }
-
+      .swiper-wrapper {
+        padding: 1px;
+      }
 }
 
 @media screen and (max-width: 628px){
