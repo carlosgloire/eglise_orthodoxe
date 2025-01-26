@@ -221,7 +221,7 @@ nav{
 
 /* When scrolling, apply background color and text color to header */
 .scrolled header {
-    background-image:linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.952));
+    background-image:linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.952)), url("../images/header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: black; /* Header text turns black */

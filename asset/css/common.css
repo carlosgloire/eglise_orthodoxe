@@ -56,7 +56,7 @@ header {
     margin-left: 2px;
     margin-right: 2px;
     transition: background-color 0.3s ease;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.952));
+    background-image:linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.952)), url("../images/header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
