@@ -150,7 +150,6 @@ nav{
 }
 .moving-text .text .follow_us{
     display: flex;
-    border:1px solid red;
 }
 .moving-text .text p i{
     margin-left: 10px;
@@ -221,7 +220,7 @@ nav{
 
 /* When scrolling, apply background color and text color to header */
 .scrolled header {
-    background-image:linear-gradient(rgba(255, 255, 255, 0.959), rgba(255, 255, 255, 0.952)), url("../images/header_image.jpg");
+    background-image:linear-gradient(rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.897)), url("../images/header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: black; /* Header text turns black */
