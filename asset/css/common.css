@@ -501,6 +501,58 @@ nav{
   .swiper-pagination-bullet {
     background: #333;
   }
+
+
+/*---------------------------------------/
+#Library
+/---------------------------------------*/
+.library{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 80px;
+}
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #4c3636;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #914847;
+}
+
+.pagination button:disabled {
+    background-color: #949292;
+    cursor: not-allowed;
+}
 /*---------------------------------------/
 #Responsive Design
 /---------------------------------------*/
@@ -622,6 +674,13 @@ nav{
     .swiper-wrapper {
         padding: 1px;
     }
+    /*Library*/
+    .library{
+        padding: 30px 30px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 628px){
@@ -629,4 +688,11 @@ nav{
         flex:98%;
     
       }
+}
+
+
+@media (max-width: 460px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
