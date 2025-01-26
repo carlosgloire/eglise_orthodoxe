@@ -512,6 +512,7 @@ nav{
     align-items: center;
     justify-content: center;
     padding: 30px 80px;
+    background-color: #fff;
 }
   .gallery {
     display: grid;
@@ -553,6 +554,101 @@ nav{
     background-color: #949292;
     cursor: not-allowed;
 }
+
+/*--Ebooks --*/
+.ebook-carousel-section {
+    text-align: center;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    padding: 10px;
+    width: 100%; /* Ensure it doesn't overflow */
+}
+
+.ebook-card {
+    flex: 0 0 calc(33.33% - 20px); /* Default: 3 cards per row */
+    max-width: calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.ebook-card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures images scale nicely */
+}
+
+.ebook-card h4 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.category {
+    color: #007bff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.price {
+    color: #4c3636;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ebook-card div {
+    padding: 10px;
+}
+
+.rating {
+    color: #ffa500;
+    font-size: 14px;
+}
+
+.ebook-card button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    color: #914847;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.wishlist-btn {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.carousel-controls {
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4c3636;
+    color: #fff;
+    cursor: pointer;
+}
+
+.carousel-controls .prev {
+    background-color: #949292;
+}
+
+
+
 /*---------------------------------------/
 #Responsive Design
 /---------------------------------------*/
@@ -696,3 +792,5 @@ nav{
         grid-template-columns: 1fr;
     }
 }
+
+    /* Responsive Design */
