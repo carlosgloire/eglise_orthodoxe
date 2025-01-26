@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Barre supérieure -->
@@ -72,9 +74,6 @@
         <img class="home-bg" src="../asset/images/background/activite_pastorale.jpg" alt="Image d'église">
         <img class="home-bg" src="../asset/images/background/Humanitaire.jpg" alt="Image d'église">
         <img class="home-bg" src="../asset/images/background/mission.jpg" alt="Image d'église">
-
-
-
     </div>
     <div class="circle-btn">
         <div class="circle active"></div>
@@ -83,59 +82,89 @@
         <div class="circle"></div>
     </div>
 </section>
-<section class="activities-section">
-    <div class="activities-container">
-        <!-- Activités Liturgiques et Sacramentelles -->
-        <div class="activity-block">
-            <h3>Activités Liturgiques et Sacramentelles</h3>
-            <ul>
-                <li>Divine Liturgie (Sainte Messe) : Célébration régulière le dimanche et les jours saints.</li>
-                <li>Sacrements :
-                    <ul>
-                        <li>Baptême</li>
-                        <li>Chrismation (Confirmation)</li>
-                        <li>Eucharistie (Communion)</li>
-                        <li>Confession (Réconciliation)</li>
-                        <li>Mariage</li>
-                        <li>Ordination (Sacerdoce)</li>
-                        <li>Onction des malades</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
 
-        <!-- Activités Pastorales -->
-        <div class="activity-block">
-            <h3>Activités Pastorales</h3>
-            <ul>
-                <li>Catéchèse et enseignement religieux</li>
-                <li>Visites pastorales à domicile ou à l'hôpital</li>
-                <li>Conseil spirituel</li>
-                <li>Retraites spirituelles</li>
-            </ul>
+<section class="blog-section">
+    <div class="featured">
+        <img src="../asset/images/famillle1.jpg" alt="Annonce des activités">
+        <div>
+            <span>Communauté • Janvier 26, 2025</span>
+            <h3>Annonce des Activités Liturgiques et Sacramentelles</h3>
+            <p>
+                La Divine Liturgie, aussi appelée Sainte Messe, est une célébration essentielle de la foi orthodoxe, qui se tient chaque dimanche et lors des jours saints. Elle rassemble les fidèles autour de la prière, de l’écoute de la Parole de Dieu et de la participation à l’Eucharistie. Ce moment sacré est au cœur de la vie spirituelle, permettant à chacun de se rapprocher de Dieu et de recevoir sa grâce. En célébrant la communion, les croyants renouvellent leur foi et leur unité en Christ. La liturgie incarne ainsi la dimension vivante et communautaire de la tradition orthodoxe.
+            </p>
+            <span>Afficher plus de texte</span>
         </div>
+    </div>
 
-        <!-- Activités Caritatives et Sociales -->
-        <div class="activity-block">
-            <h3>Activités Caritatives et Sociales</h3>
-            <ul>
-                <li>Œuvres de charité : distribution de nourriture et vêtements</li>
-                <li>Visites aux malades et prisonniers</li>
-            </ul>
-        </div>
+    <div class="trending">
+        <h3>Activités Complémentaires</h3>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../asset/images/worship2.jpg" alt="Activités Pastorales">
+                    <h4>Activités Pastorales</h4>
+                    <p>Catéchèse et enseignement religieux, visites pastorales, conseil spirituel, retraites spirituelles.</p>
+                    <span>Pastoral • Janvier 26, 2025</span>
+                </div>
 
-        <!-- Activités Missionnaires -->
-        <div class="activity-block">
-            <h3>Missionnaires et Évangélisation</h3>
-            <ul>
-                <li>Organisation de missions d’évangélisation</li>
-                <li>Formation des missionnaires</li>
-                <li>Traduction des textes liturgiques</li>
-            </ul>
+                <div class="swiper-slide">
+                    <img src="../asset/images/worship1.jpg" alt="Activités Caritatives">
+                    <h4>Activités Caritatives et Sociales</h4>
+                    <p>Œuvres de charité, visites aux malades et prisonniers.</p>
+                    <span>Caritatif • Janvier 26, 2025</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../asset/images/singing.jpg" alt="Activités Missionnaires">
+                    <h4>Missionnaires et d’Évangélisation</h4>
+                    <p>Évangélisation, formation des missionnaires, traduction des textes liturgiques.</p>
+                    <span>Missionnaire • Janvier 26, 2025</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../asset/images/worship2.jpg" alt="Activités Pastorales">
+                    <h4>Activités Pastorales</h4>
+                    <p>Catéchèse et enseignement religieux, visites pastorales, conseil spirituel, retraites spirituelles.</p>
+                    <span>Pastoral • Janvier 26, 2025</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../asset/images/worship1.jpg" alt="Activités Caritatives">
+                    <h4>Activités Caritatives et Sociales</h4>
+                    <p>Œuvres de charité, visites aux malades et prisonniers.</p>
+                    <span>Caritatif • Janvier 26, 2025</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="../asset/images/singing.jpg" alt="Activités Missionnaires">
+                    <h4>Missionnaires et d’Évangélisation</h4>
+                    <p>Évangélisation, formation des missionnaires, traduction des textes liturgiques.</p>
+                    <span>Missionnaire • Janvier 26, 2025</span>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
 
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
 <footer class="footer">
     <div class="footer-container">
