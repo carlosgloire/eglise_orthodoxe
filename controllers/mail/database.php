@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$dbname = "penja_peppers";
+$dbname = "eglise_orthodoxe";
 $username = "root";
 $password = "";
 
